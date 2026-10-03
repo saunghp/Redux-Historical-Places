@@ -13,12 +13,16 @@ function PlaceCard() {
           return (
             <div >
                 <div key={index}>
+                  <img src={place.image} alt="Myanmar's historical place" width="300px" height="200px"/>
                   <h2>{place.name}</h2>
                   <p>{place.description}</p>
-                  <img src={place.image} alt="Myanmar's historical place" width="300px" height="200px"/> 
+                  <p style={{color: place.visited ? "green" : "red"}}>
+                    {place.visited ? "Visited" : "Not visited"}
+                  </p>
                   <button onClick={()=>dispatch(toggleVisited(place.id))}>
                     {place.visited ? "Unmark as  Visited" : "Mark as Visited"}
                   </button>
+                  <br/>
                 </div>
             </div>
           )
