@@ -24,8 +24,8 @@ const placesSlicer = {
         },
         {
             id:4,
-            name:"Inle Lake",
-            description:"Inle Lake is a freshwater lake located in Shan State, Myanmar. It is famous for its floating villages, stilt houses, and unique leg-rowing fishermen.",
+            name:"Inlay Lake",
+            description:"Inlay Lake is a freshwater lake located in Shan State, Myanmar. It is famous for its floating villages, stilt houses, and unique leg-rowing fishermen.",
             image:"https://i.pinimg.com/originals/43/dc/d0/43dcd031e7a63b7260424262b0c3308b.jpg",
             visited:false
         },
