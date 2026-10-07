@@ -43,7 +43,8 @@ const placesSlicer = {
             image:"https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/10/c3.jpg",
             visited:false
         }   
-    ]
+    ],
+    selectedId:null
 };
 
 
@@ -57,9 +58,12 @@ export const placesSlice=createSlice({
                 place.visited=!place.visited;
             }
 
+        },
+        selectedPlace:(state,action)=>{
+            state.selectedId = action.payload;
         }
     }
 });
 
-export const {toggleVisited}=placesSlice.actions;
+export const {toggleVisited, selectedPlace}=placesSlice.actions;
 export default placesSlice.reducer;
