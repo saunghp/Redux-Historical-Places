@@ -42,7 +42,7 @@ const placesSlicer = {
             description:"The Golden Rock, also known as Kyaiktiyo Pagoda, is a famous Buddhist pilgrimage site in Mon State, Myanmar. It is a small pagoda built on top of a massive granite boulder covered with gold leaf.",
             image:"https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/2d/10/c3.jpg",
             visited:false
-        }   
+        } 
     ],
     selectedId:null,
     suggestId:null,
