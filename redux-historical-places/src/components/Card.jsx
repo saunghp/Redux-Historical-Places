@@ -4,7 +4,7 @@ import Button from "./Button.jsx";
 function Card({ place, big }) {
   const dispatch = useDispatch();
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer">
+    <div className="bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer font-extralight">
       <h2 className="font-bold text-xl text-center p-2">{place.name}</h2>
       <img
         src={place.image}

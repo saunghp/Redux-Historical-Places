@@ -44,7 +44,8 @@ const placesSlicer = {
             visited:false
         }   
     ],
-    selectedId:null
+    selectedId:null,
+    suggestId:null,
 };
 
 
@@ -61,9 +62,16 @@ export const placesSlice=createSlice({
         },
         selectedPlace:(state,action)=>{
             state.selectedId = action.payload;
+        },
+        suggestRandomPlace:(state)=>{
+            const random = Math.floor(Math.random()*state.places.length);
+            state.suggestId = state.places[random].id;
+        },
+        clearSuggestion:(state)=>{
+            state.suggestId=null;
         }
     }
 });
 
-export const {toggleVisited, selectedPlace}=placesSlice.actions;
+export const {toggleVisited, selectedPlace,suggestRandomPlace, clearSuggestion}=placesSlice.actions;
 export default placesSlice.reducer;
